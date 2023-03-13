@@ -4,8 +4,8 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "Air Force",
-    price: 119,
+    title: "Ajanta",
+    price: 699,
     colors: [
       {
         code: "black",
@@ -19,8 +19,8 @@ const products = [
   },
   {
     id: 2,
-    title: "Air Jordan",
-    price: 149,
+    title: "Bata",
+    price: 749,
     colors: [
       {
         code: "lightgray",
@@ -34,8 +34,8 @@ const products = [
   },
   {
     id: 3,
-    title: "Blazer",
-    price: 109,
+    title: "Puma",
+    price: 1999,
     colors: [
       {
         code: "lightgray",
@@ -49,8 +49,8 @@ const products = [
   },
   {
     id: 4,
-    title: "Crater",
-    price: 129,
+    title: "Reebok",
+    price: 2599,
     colors: [
       {
         code: "black",
@@ -64,8 +64,8 @@ const products = [
   },
   {
     id: 5,
-    title: "Hippie",
-    price: 99,
+    title: "Nike",
+    price: 2999,
     colors: [
       {
         code: "gray",
@@ -97,7 +97,7 @@ menuItems.forEach((item, index) => {
 
     //change texts of currentProduct
     currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "$" + choosenProduct.price;
+    currentProductPrice.textContent = "₹" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
 
     //assing new colors
